@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic head setup cause we ain't basic, amirite? -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤡Baggies👜</title>
+  <!-- Basic Meta Tags for Link Preview -->
+  <meta name="title" content="🤡Baggie Spaces👜">
+  <meta name="description" content="🤭 Yo fam, we deadass creepin' 👀 the baggie spaces sippin the tea while they spill it, 🍵 fax, no printer... 📠">
+
+  <!-- Open Graph Meta Tags for platforms like Facebook and LinkedIn -->
+  <meta property="og:title" content="🤡Baggie Spaces👜">
+  <meta property="og:description" content="🤭 Yo fam, we deadass creepin' 👀 the baggie spaces sippin the tea while they spill it, 🍵 fax, no printer... 📠">
+  <meta property="og:image" content="https://campbaggie.com/baggie_spaces.png"> <!-- Replace with your image URL -->
+  <meta property="og:url" content="https://campbaggie.com/baggies"> <!-- Replace with your page URL -->
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="🤡Baggie Spaces👜">
+  <meta name="twitter:description" content="🤭 Yo fam, we deadass creepin' 👀 the baggie spaces sippin the tea while they spill it, 🍵 fax, no printer... 📠">
+  <meta name="twitter:image" content="https://campbaggie.com/baggie_spaces.png"> <!-- Replace with your image URL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <style>
+    /* Setting up that aesthetic vibe for the whole body. It's giving... dark mode vibes */
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: black;
+      /* Big mad love for the dark mode */
+      color: #a020f0;
+      /* Serving Neon Purple realness */
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1, h2, p, .card, a, button, input, select {
+        text-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+    }    
+
+    @keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-background {
+  background: linear-gradient(45deg, #000000, #9e00ff, #000000, #9e00ff);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+    /* Making the titles pop cause they're the main characters here, sksksk */
+    h1,
+    .card h2 {
+      text-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+      /* That glow-up tho */
+      text-align: center;
+    }
+
+    /* The bop player needs to be full width, cause it's the CEO of this page */
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* Styling those boujee download buttons and other buttons. Sheesh, they look fire! */
+    a.download-btn,
+    button {
+      display: inline-block;
+      background-color: #a020f0;
+      /* Neon Purple cause we're extra AF */
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      /* @me next time if you see an underlined button */
+      margin-top: 10px;
+      cursor: pointer;
+      /* Flex that clickable vibe */
+      transition: background-color 0.3s;
+      /* Smooth transitions cause we're not basic */
+      box-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+      /* Glow effect cause we're lit */
+    }
+
+    /* Hover effect for buttons. A bit darker purple, cause we understood the assignment */
+    a.download-btn:hover,
+    button:hover {
+      background-color: #8a00d4;
+    }
+
+    /* Card container setup. It's where the main bops reside */
+    #cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      /* Letting the cards wrap cause we're not out of pocket */
+      justify-content: space-around;
+      /* Evenly distributing the bop cards. Periodt. */
+      padding: 10px;
+    }
+
+    /* Styling individual bop cards. They're the real MVPs */
+    .card {
+      width: 330px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #a020f0;
+      /* Neon Purple border for that drip */
+      box-shadow: 0 4px 6px rgba(160, 32, 240, 0.2);
+      /* Shadow for depth cause we're 3D AF */
+      background-color: #222;
+      /* Darker background cause it hits different */
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      /* Smooth transition cause we finesse like that */
+    }
+
+    /* Card hover effect cause we vibe like that */
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(160, 32, 240, 0.3);
+    }
+
+    /* Adjusting the font size of the text inside the card cause size matters, no cap */
+    .card p {
+      font-size: 0.9em;
+    }
+
+    /* Styling the search input. It's the tea spiller of the page, letting you find your bops */
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+      /* Glow-up on point */
+      border: none;
+      /* Clean borders cause we're not here to play */
+      outline: none;
+      background-color: #222;
+      /* Keeping it dark and zesty */
+      color: #a020f0;
+    }
+
+    /* Navigation Bar Styling */
+    #navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      background-color: #222;
+      /* Darker background to contrast with icons */
+    }
+
+    .nav-icon {
+      margin: 0 10px;
+      color: #a020f0;
+      /* Neon Purple base color */
+      font-size: 24px;
+      /* Adjust size if needed */
+      transition: color 0.3s;
+    }
+
+    /* Neon Glow effect on hover */
+    .nav-icon:hover {
+      color: #8a00d4;
+      text-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+    }
+
+    #searchInput {
+    width: 70%; /* Reduce width to 70% */
+    display: block; /* Set to block to allow margins to work */
+    margin: 0 auto; /* Center the input */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0; /* Glow-up on point */
+    border: none; /* Clean borders cause we're not here to play */
+    outline: none;
+    background-color: #222; /* Keeping it dark and zesty */
+    color: #a020f0;
+}
+
+
+    /* Styling the dropdown to match the aesthetics */
+    .nav-dropdown {
+        background-color: #222; /* Matching the navbar background */
+        color: #a020f0; /* Neon Purple text */
+        border: none; /* No border for aesthetics */
+        box-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0; /* Glow effect */
+        padding: 8px 15px; /* Padding for better appearance */
+        border-radius: 5px; /* Rounded corners for the dropdown */
+        font-size: 16px; /* Font size adjustment */
+        margin-left: 15px; /* Margin for spacing from the icons */
+        cursor: pointer; /* Change cursor on hover */
+    }
+
+    .nav-dropdown:hover {
+        background-color: #111; /* Darken the dropdown on hover */
+    }
+
+    .nav-dropdown option {
+        background-color: #222; /* Background for the dropdown options */
+        color: #a020f0; /* Text color for the options */
+    }
+
+    .new-file {
+        border: 2px dashed violet;
+        animation: pulsate 0.5s infinite;
+        color: white;
+    }  
+
+    @keyframes pulsate {
+        0% {
+            border-color: pink;
+        }
+        50% {
+            border-color: #a020f0;
+        }
+        100% {
+            border-color: pink;
+        }
+    }  
+
+        /* General Text Shadow for All Text Elements */
+        *, *::before, *::after {
+            text-shadow: 0 0 5px #a020f0, 0 0 10px #a020f0, 0 0 20px #a020f0;
+        }
+
+        /* Layering for Larger Text Blocks like Titles and Card Content */
+        h1, h2, .card h2, .card p {
+            background-color: rgba(34, 34, 34, 0.8);  /* Slightly transparent background to maintain the theme */
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #a020f0;
+        }
+
+        /* Enhancing the Search Input for Better Readability */
+        #searchInput {
+            background-color: rgba(34, 34, 34, 0.8);
+            border: 1px solid #a020f0;
+        }
+
+        /* Enhancing the Dropdown for Better Readability */
+        .nav-dropdown {
+            background-color: rgba(34, 34, 34, 0.8);
+            border: 1px solid #a020f0;
+        }
+
+
+  </style>
+</head>
+
+<body class="gradient-background">
+
+<!-- Navigation Bar with FA icons -->
+<nav id="navbar">
+    <a href="https://twitter.com/moassisdoa" target="_blank" class="nav-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://discord.gg/v9NEYmjCSH" target="_blank" class="nav-icon"><i class="fab fa-discord"></i></a>
+    <a href="https://www.youtube.com/@petrockminer5336/videos" target="_blank" class="nav-icon"><i class="fab fa-youtube"></i></a>
+    
+    <!-- Dropdown to filter by host moved inside the navbar -->
+    <select id="hostDropdown" onchange="filterCards()" class="nav-dropdown">
+        <option value="">All Hosts</option>
+        <% 
+            const hostSet = new Set();
+            files.forEach(file => {
+                let match = file.name.match(/\[(.*?)\]\[(.*?)\] (.*?) \((.*?)\).m4a/);
+                if(match && match[1]) {
+                    hostSet.add(match[1]);
+                }
+            });
+            const uniqueHosts = [...hostSet];
+            uniqueHosts.forEach(host => {
+        %>
+        <option value="<%= host %>"><%= host %></option>
+        <% }) %>
+    </select>
+</nav>
+
+<!-- The main title, cause it's not just a phase, mom! -->
+<h1>🎙 No cap, these baggies big mad,🤬 and thats on god baby girl...👂</h1>
+
+<!-- The search input to find your bops. Say less, fam -->
+<input type="text" id="searchInput" placeholder="Search for songs..." oninput="filterCards()">
+
+
+
+  <!-- Container holding all the bop cards. It's where the party's at! -->
+    <div id="cardContainer">
+        <% 
+        const twentyFourHoursAgo = new Date();
+        twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24);
+        
+        files.sort((a, b) => b.date - a.date);
+        files.forEach((file, index) => { 
+            let parts = file.name.match(/\[([^\]]+)\]\[([^\]]+)\] ([^\(]+) \([^\)]+\).m4a/);
+            if(parts) {
+                let host = parts[1];
+                let title = parts[3];
+        %>
+        <div class="card <%= file.date > twentyFourHoursAgo ? 'new-file' : '' %>" data-index="<%= index %>">
+            <h2>💦 <%= title %> 💦</h2>
+            <p>🤡Space Host: <%= host %></p>
+            <p>📅 Dropped on: <%= file.date.toLocaleDateString() %> at <%= file.date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) %></p>
+            <p>📦 Size: <%= (file.size / (1024 * 1024)).toFixed(2) %> MB</p>
+            <p>⏱ Length:
+                <% if (isNaN(file.duration)) { %>
+                Duration unknown
+                <% } else { %>
+                <%= Math.floor(file.duration / 3600) %>:<%= String(Math.floor((file.duration % 3600) / 60)).padStart(2, '0') %>:<%= String(Math.round(file.duration % 60)).padStart(2, '0') %>
+                <% } %>
+            </p>
+            <!-- Individual audio player for each card -->
+            <audio controls src="<%= file.path %>" preload="metadata"></audio>
+            <a class="download-btn" href="<%= file.path %>">Download Space</a>
+        </div>
+        <% 
+            }
+        }) %>
+    </div>
+
+  <!-- JS to handle bop searching and playing. It's the brains behind the bop operation -->
+  <script>
+    // Grab all the card elements cause we're about to flex some JS magic
+    const cards = document.querySelectorAll('.card');
+    // Function to play the chosen bop. It's giving... DJ vibes
+    function queueSong(path) {
+      const audioPlayer = document.getElementById('audioPlayer');
+      audioPlayer.src = path;
+      audioPlayer.play();
+    }
+    // Function to filter and show only the relevant bops. It's not you, it's the search term
+function filterCards() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const selectedHost = document.getElementById('hostDropdown').value.toLowerCase();
+    cards.forEach(card => {
+        const title = card.querySelector('h2').innerText.toLowerCase();
+        const hostElem = card.querySelector('p');
+        const host = hostElem && hostElem.innerText.includes("🤡Space Host:") ? hostElem.innerText.split("🤡Space Host:")[1].trim().toLowerCase() : "";
+        if ((title.includes(searchTerm) || host.includes(searchTerm)) && (selectedHost === "" || host === selectedHost)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+  </script>
+
+</body>
+
+</html>
