@@ -1,0 +1,11 @@
+{
+    "serverPort": 3001,
+    "downloadDirectory": "/path/to/download",
+    "redis": {
+        "retryStrategyOptions": {
+            "totalRetryTime": 3600000,
+            "maxAttempts": 10
+        },
+        "cacheExpiry": 3600
+    }
+}
