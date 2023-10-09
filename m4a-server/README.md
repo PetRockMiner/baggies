@@ -1,4 +1,3 @@
-```markdown
 # 🍕 #SFYL Bot 🤩
 
 💡 **Inspo**: Everyone's out here making basic bots. We said, "no more"! Introducing #SFYL Bot - the most vibe-worthy, boujee, Gen-Z app out there. If you're looking to flex on your haters, and serve some serious tech looks, you're in the right space. 💅
@@ -17,8 +16,8 @@ This ain't your grandma's bot. This bad boy:
 
 1. **Clone this Repository**:
    ```bash
-   git clone https://github.com/YourUsername/SFYL-Bot.git
-   cd SFYL-Bot
+   git clone https://github.com/PetRockMiner/baggies.git
+   cd baggies
    ```
 
 2. **Install Dependencies**:
@@ -66,4 +65,3 @@ This project is licensed under the MIT License. So, remix it, spin it, and serve
 ---
 
 Remember, in a world full of 1s and 0s, be a 💯. Stay vibey! 🌊🤙
-```
