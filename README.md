@@ -24,14 +24,20 @@ Here's a sample for you to copy & vibe with:
 {
   "interval": 30000,
   "users": [
-    "PLACEHOLDER_USERNAMES_HERE_SEPARATED_BY_COMMAS"
-  ],
+    {
+      "username": "username"
+    },
+    "username_1",
+    "username_2",
+    "username_3",
+    "username_4"
+  ],  
   "webhooks": {
     "discord": [
       {
         "active": true,
         "urls": [
-          "PLACEHOLDER_DISCORD_WEBHOOK_URLS_HERE"
+          "https://discord.com/api/webhooks/PLACEHOLDER_DISCORD_WEBHOOK_URLS_HERE"
         ],
         "usernames": [
           "<all>"
