@@ -1,0 +1,103 @@
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 2rem 10rem;
+    overflow: hidden; /* Prevent scroll bars from appearing */
+    font-family: "Special Elite", cursive;
+}
+
+.noass-button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 187px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Special Elite", cursive; /* Apply the Google font */
+}
+
+.noass-button:hover,
+.noass-button:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff;
+    box-shadow: 
+        0 0 5px #008cff,
+        0 0 20px #008cff,
+        0 0 50px #008cff,
+        0 0 100px #008cff;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    gap: 2rem;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.floating-head {
+    width: auto;
+    max-width: 15%;
+    opacity: 1.0;
+    transition: all 0.1s linear;
+}
+
+@keyframes falling {
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+#floating-heads {
+    overflow: visible; /* Allow images to overflow the container */
+    position: absolute; /* Use absolute positioning to place the container */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Limit the height */
+    width: 100vw; /* Limit the width */
+    z-index: -1; /* Place it behind the center container */
+    display: none; /* Hide the container by default */
+}
+
+/* Adjust button styles for smaller screens */
+@media (max-width: 768px) {
+    .noass-button {
+        font-size: 2rem; /* Reduce font size for mobile */
+        padding: 5px 10px; /* Adjust padding */
+    }
+}
