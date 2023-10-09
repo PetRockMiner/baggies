@@ -7,7 +7,7 @@
 This ain't your grandma's bot. This bad boy:
 - 🎧 Finds and serves those m4a files because... well, why not?
 - 🚀 Uses Redis to cache like a boss. We're talking speed. *Sonic* is shaking.
-- 📂 Watches your directories for new files. Creepy? Maybe. Useful? Heck yes.
+- 📂 Watches your directories like Kory watches for his meth dealer. Creepy? Maybe. Useful? Heck yes.
 - 🎨 Colors the console because life ain't just black and white.
 - 🧠 Uses EJS as its view engine. We're all about those views. Drake who?
 - 🎉 Drops a fire logo and console messages that are straight fire.
