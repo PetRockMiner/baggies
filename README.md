@@ -5,14 +5,14 @@ Yo fam! 🤙 If you're trying to get the 411 on how to set up `twspace-crawler` 
 ## 🛠️ Installation
 
 ### 1. **Command-line Installation** 🖥️
-\```bash
+```bash
 npm install --global twspace-crawler
-\```
+```
 
 ### 2. **Module Installation** (for the nerdy devs out there) 🤓
-\```bash
+```bash
 npm install twspace-crawler
-\```
+```
 
 ## 📝 Config Setup
 
@@ -20,7 +20,7 @@ npm install twspace-crawler
 
 Here's a sample for you to copy & vibe with:
 
-\```json
+```json
 {
   "interval": 30000,
   "users": [
@@ -44,7 +44,7 @@ Here's a sample for you to copy & vibe with:
     ]
   }
 }
-\```
+```
 
 **Note**: Replace the placeholders with the actual data, but keep it on the DL! Don't share sensitive info! 🙊
 
@@ -52,11 +52,11 @@ Here's a sample for you to copy & vibe with:
 
 This is where you keep those secret keys. Make sure to name it `.env` and keep it in the current working folder.
 
-\```env
+```env
 TWITTER_AUTHORIZATION=PLACEHOLDER_YOUR_AUTHORIZATION_HERE
 TWITTER_AUTH_TOKEN=PLACEHOLDER_YOUR_AUTH_TOKEN_HERE
 TWITTER_CSRF_TOKEN=PLACEHOLDER_YOUR_CSRF_TOKEN_HERE
-\```
+```
 
 Again, fam, don't share those placeholder values! 🤫 Replace them with the real ones.
 
@@ -64,9 +64,9 @@ Again, fam, don't share those placeholder values! 🤫 Replace them with the rea
 
 To monitor some dope users and save their Spaces when they're done:
 
-\```bash
+```bash
 twspace-crawler --user user1,user2,... --env ./.env --config ./config.json
-\```
+```
 
 ## 🤘 Wrapping Up
 
