@@ -1,4 +1,4 @@
-# 🍕 #SFYL Bot 🤩
+# 🍕 #SFYL Server && Bot 🤩
 
 💡 **Inspo**: Everyone's out here making basic bots. We said, "no more"! Introducing #SFYL Bot - the most vibe-worthy, boujee, Gen-Z app out there. If you're looking to flex on your haters, and serve some serious tech looks, you're in the right space. 💅
 
